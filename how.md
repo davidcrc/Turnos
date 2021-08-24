@@ -35,3 +35,7 @@ dotnet ef migrations add Migracion
 ```sh
 dotnet ef database update
 ```
+
+## link - deberia cargar los datos q estan en la BD
+
+http://localhost:5000/especialidad

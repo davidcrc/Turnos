@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@* Hacer los datos de la tabla iterables *@
+@model IEnumerable<Turnos.Models.Especialidad>
+
+<!DOCTYPE html>
 
 <html>
 
@@ -11,19 +14,25 @@
     <thead>
       <tr>
         <th>
-          Descripcion
+          @Html.DisplayNameFor(model => model.Descripcion)
         </th>
       </tr>
     </thead>
 
     <tbody>
       @* Aqui mostraremos los registros de la BD *@
-      <tr>
+      @* <tr>
         <td>traumatologia</td>
       </tr>
       <tr>
         <td>Cardiologia</td>
-      </tr>
+      </tr> *@
+      @foreach (var item in Model)
+      {
+        <tr>
+          <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+        </tr>
+      }
     </tbody>
 
   </table>
