@@ -23,7 +23,7 @@ dotnet run
 
 ## install entity framework??
 ```sh
-dotnet tool install --global dotnet-ef --version=3.1
+dotnet tool install --global dotnet-ef --version=3.1.1
 ```
 > Crear la migracion
 
