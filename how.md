@@ -11,3 +11,12 @@ dotnet new mvc
 ```sh
 dotnet run
 ```
+
+## Conect to db ( ver este commit )
+
+> add to appsettings.json:
+```json
+"ConnectionStrings": {
+  "TurnosContext": "Data Source=.\\;Initial Catalog=Turnos;Persist Security Info=false;Trusted_Conecction=True"
+},
+```
